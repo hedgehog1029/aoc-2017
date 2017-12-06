@@ -22,7 +22,7 @@ find = (input) ->
         k++
         hash = banks.join(";")
         if states.indexOf(hash) > -1
-            return k
+            return k - (states.indexOf(hash) + 1)
 
         states.push(hash)
 
